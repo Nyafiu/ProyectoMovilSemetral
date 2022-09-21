@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-fab-menu',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FabMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router, private navCtrl:NavController) { }
 
   ngOnInit() {}
 
