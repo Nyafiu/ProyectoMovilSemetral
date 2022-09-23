@@ -12,18 +12,9 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'about',
-    loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
-  {
-    path: 'page404',
-    loadChildren: () => import('./pages/page404/page404.module').then( m => m.Page404PageModule)
-  },
-  {
-    path: '**',
-    redirectTo: 'page404'
-  }
-
 ];
 
 @NgModule({
