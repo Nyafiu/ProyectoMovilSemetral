@@ -2,12 +2,12 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { IonicModule } from "@ionic/angular";
-import { FabMenuComponent } from "./fab-menu/fab-menu.component";
 import { HeaderComponent } from "./header/header.component";
+import { MenuComponent } from "./menu/menu.component";
 
 @NgModule({
     declarations:[
-        FabMenuComponent,
+        MenuComponent,
         HeaderComponent
     ],
     imports:[
@@ -16,7 +16,7 @@ import { HeaderComponent } from "./header/header.component";
         RouterModule
     ],
     exports:[
-        FabMenuComponent,
+        MenuComponent,
         HeaderComponent
     ]
 })
