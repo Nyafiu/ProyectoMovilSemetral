@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
 
   @Input() pageTitle :string;
   @Input() isNotHome :boolean;
+  @Input() sideMenu :boolean;
 
   constructor(private router:Router) { }
 
