@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-header',
@@ -12,10 +13,10 @@ export class HeaderComponent implements OnInit {
   @Input() isNotHome :boolean;
   @Input() sideMenu :boolean;
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private navCtrl:NavController) { }
 
   goAbout(){
-    this.router.navigate(['/about']);
+    this.router.navigateByUrl('/about');
   }
   
   ngOnInit() {}

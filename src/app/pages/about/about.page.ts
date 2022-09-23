@@ -9,6 +9,7 @@ export class AboutPage implements OnInit {
 
   pageTitle = 'About';
   isNotHome = true;
+  sideMenu = true;
 
   constructor() { }
 

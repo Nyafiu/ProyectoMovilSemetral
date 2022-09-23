@@ -9,7 +9,7 @@ export class HomePage {
 
   pageTitle = 'Home';
   isNotHome = false;
-  sideMenu = false;
+  sideMenu = true;
 
   constructor() {}
 
