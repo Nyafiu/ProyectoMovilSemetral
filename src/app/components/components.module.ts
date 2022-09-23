@@ -3,10 +3,12 @@ import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { IonicModule } from "@ionic/angular";
 import { FabMenuComponent } from "./fab-menu/fab-menu.component";
+import { HeaderComponent } from "./header/header.component";
 
 @NgModule({
     declarations:[
-        FabMenuComponent
+        FabMenuComponent,
+        HeaderComponent
     ],
     imports:[
         CommonModule,
@@ -14,7 +16,8 @@ import { FabMenuComponent } from "./fab-menu/fab-menu.component";
         RouterModule
     ],
     exports:[
-        FabMenuComponent
+        FabMenuComponent,
+        HeaderComponent
     ]
 })
 

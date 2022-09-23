@@ -1,17 +1,6 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Holaa
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<!-- esto es de la pagina principal -->
+<div class="ion-page" id="main-content">
+  <app-header [pageTitle]="pageTitle" [isNotHome]="isNotHome"></app-header>
 
   <div id="container">
     <strong>Ready to create an app?</strong>
@@ -19,5 +8,6 @@
   </div>
 
   <app-fab-menu></app-fab-menu>
-</ion-content>
+
+</div>
 
