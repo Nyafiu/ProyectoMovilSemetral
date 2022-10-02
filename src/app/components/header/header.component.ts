@@ -16,8 +16,13 @@ export class HeaderComponent implements OnInit {
   constructor(private router:Router, private navCtrl:NavController) { }
 
   goAbout(){
-    this.router.navigateByUrl('/about');
+    this.navCtrl.navigateForward('/about');
   }
+
+  public appPages = [
+    { title: 'About', url: '/about', icon: 'people' },
+    { title: 'Home', url: '/home', icon: 'mail' }
+  ];
   
   ngOnInit() {}
 
